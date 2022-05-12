@@ -1,4 +1,5 @@
 using System.Collections;
+using Script.Player;
 using Script.Sound;
 using Script.Spawn;
 using UnityEngine;
@@ -88,12 +89,12 @@ namespace Script.Controller
         
         public void Sound01()
         {
-            SoundManager.Instance.Play(SoundManager.Sound.BossAttack01);
+            SoundManager.Instance.PlaySound(SoundManager.Sound.BossAttack01);
         }
         
         public void Sound02()
         {
-            SoundManager.Instance.Play(SoundManager.Sound.BossAttack02);
+            SoundManager.Instance.PlaySound(SoundManager.Sound.BossAttack02);
         }
         
 

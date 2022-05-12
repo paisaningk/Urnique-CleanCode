@@ -1,4 +1,5 @@
 using Script.Controller;
+using Script.Player;
 using UnityEngine;
 
 namespace Script.Spawn

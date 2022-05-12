@@ -4,6 +4,7 @@ using MoreMountains.Feedbacks;
 using Script.Base;
 using Script.Controller;
 using Script.Pickup;
+using Script.Player;
 using Script.Sound;
 using TMPro;
 using UnityEngine;
@@ -147,8 +148,8 @@ namespace Script.Spawn
                 {
                     if (soundPlay)
                     {
-                        SoundManager.Instance.Stop(SoundManager.Sound.BGM);
-                        SoundManager.Instance.Play(SoundManager.Sound.Shop);
+                        SoundManager.Instance.StopSound(SoundManager.Sound.BGM);
+                        SoundManager.Instance.PlaySound(SoundManager.Sound.Shop);
                         soundPlay = false;
                     }
                     nextwaveGameObject.SetActive(true);
@@ -182,7 +183,7 @@ namespace Script.Spawn
         {
             if (CanSpawn && nextSpawnTime < Time.time)
             {
-                SoundManager.Instance.Play(SoundManager.Sound.SpawnEnemy);
+                SoundManager.Instance.PlaySound(SoundManager.Sound.SpawnEnemy);
                 var RandomEnemy = CurrentWave.typeOfEnemy[Random.Range(0, CurrentWave.typeOfEnemy.Length)];
                 var RandomSpawnPoint = SpawnPoint[Random.Range(0, SpawnPoint.Length)];
                 Instantiate(RandomEnemy, RandomSpawnPoint.position, Quaternion.identity);
@@ -194,13 +195,13 @@ namespace Script.Spawn
                     var tolalEnemies = GameObject.FindGameObjectsWithTag("Enemy");
                     foreach (var VARIABLE in tolalEnemies)
                     {
-                        var b = VARIABLE.GetComponent<EnemyCharacter>();
-                        if (b.isBoss == true)
+                        var enemyCharacter = VARIABLE.GetComponent<EnemyCharacter>();
+                        if (enemyCharacter.isBoss == true)
                         {
-                            HPboss = b;
+                            HPboss = enemyCharacter;
                             UiBoss.SetActive(true);
-                            SoundManager.Instance.Stop(SoundManager.Sound.BGM);
-                            SoundManager.Instance.Play(SoundManager.Sound.BGMBoss);
+                            SoundManager.Instance.StopSound(SoundManager.Sound.BGM);
+                            SoundManager.Instance.PlaySound(SoundManager.Sound.BGMBoss);
                         }
                     }
                 }
@@ -222,7 +223,7 @@ namespace Script.Spawn
             Player.transform.position = ShopPoint.position;
             CameraMap.gameObject.SetActive(false);
             CameraShop.gameObject.SetActive(true);
-            SoundManager.Instance.Play(SoundManager.Sound.OpenShop);
+            SoundManager.Instance.PlaySound(SoundManager.Sound.OpenShop);
             shopController = Shop.GetComponent<ShopController>();
             Shop.SetActive(true);
             shopController.RngItemandSpawn();
@@ -253,7 +254,7 @@ namespace Script.Spawn
             CurrentWaveNumber++;
             CanSpawn = true;
             soundPlay = true;
-            SoundManager.Instance.Stop(SoundManager.Sound.Shop);
+            SoundManager.Instance.StopSound(SoundManager.Sound.Shop);
             SoundManager.Instance.Playfrompause(SoundManager.Sound.BGM);
         }
     }

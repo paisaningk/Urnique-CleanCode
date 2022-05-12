@@ -36,12 +36,12 @@ namespace Script.Controller
         
         private void Playsound()
         {
-            SoundManager.Instance.Play(SoundManager.Sound.TankAttack);
+            SoundManager.Instance.PlaySound(SoundManager.Sound.TankAttack);
         }
         
         private void Playsound02()
         {
-            SoundManager.Instance.Play(SoundManager.Sound.EyeAttack);
+            SoundManager.Instance.PlaySound(SoundManager.Sound.EyeAttack);
         }
     
         private void MoveCharacter(Vector3 direction)

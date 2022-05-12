@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using Script.Base;
 using Script.Menu;
+using Script.Player;
 using Script.Sound;
 using Script.Spawn;
 using TMPro;
@@ -56,7 +57,7 @@ namespace Script.Controller
         {
             if (shop == true)
             {
-                SoundManager.Instance.Play(SoundManager.Sound.TalkWithShop);
+                SoundManager.Instance.PlaySound(SoundManager.Sound.TalkWithShop);
                 var talk = new[]
                 {
                     "Hello , You come again","Oh, are you still alive?" , "HOW much money do you have " ,
@@ -110,12 +111,12 @@ namespace Script.Controller
                 Deleteitem();
                 RngItemandSpawn();
                 text.text = $"Thank you for using the service. ";
-                SoundManager.Instance.Play(SoundManager.Sound.ThankYou);
+                SoundManager.Instance.PlaySound(SoundManager.Sound.ThankYou);
             }
             else
             {
                 text.text = $"GOLD not enough";
-                SoundManager.Instance.Play(SoundManager.Sound.NoMoney);
+                SoundManager.Instance.PlaySound(SoundManager.Sound.NoMoney);
             }
         }
 
@@ -141,7 +142,7 @@ namespace Script.Controller
                     playerCharacter.Hp = playerCharacter.MaxHp;
                 }
                 text.text = $"You gain hp +{heal50}. ";
-                SoundManager.Instance.Play(SoundManager.Sound.ThankYou);
+                SoundManager.Instance.PlaySound(SoundManager.Sound.ThankYou);
             }
             else if (playerCharacter.Hp >= playerCharacter.MaxHp)
             {
@@ -151,7 +152,7 @@ namespace Script.Controller
             else
             {
                 text.text = $"GOLD not enough.";
-                SoundManager.Instance.Play(SoundManager.Sound.NoMoney);
+                SoundManager.Instance.PlaySound(SoundManager.Sound.NoMoney);
             }
         }
 

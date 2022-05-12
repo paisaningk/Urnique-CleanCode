@@ -1,4 +1,5 @@
 using System.Collections;
+using Script.Player;
 using Script.Sound;
 using Script.Spawn;
 using UnityEngine;
@@ -55,7 +56,7 @@ namespace Script.Controller
 
         private void Playsound()
         {
-            SoundManager.Instance.Play(SoundManager.Sound.ExecutionerAttack);
+            SoundManager.Instance.PlaySound(SoundManager.Sound.ExecutionerAttack);
         }
         
         IEnumerator Wait()

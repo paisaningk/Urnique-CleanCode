@@ -3,6 +3,7 @@ using System.Collections;
 using MoreMountains.Feedbacks;
 using Script.Base;
 using Script.Controller;
+using Script.Player;
 using Script.Sound;
 using TMPro;
 using UnityEngine;
@@ -88,45 +89,45 @@ namespace Script.Menu
 
         private void Update()
         {
-            if (PlayerCharacter.PlayerType == PlayerType.Gun)
-            {
-                var ammo = playerController.Ammo;
-
-                if (isReload)
-                {
-                    foreach (var VARIABLE in Ammo)
-                    {
-                        VARIABLE.SetActive(true);
-                    }
-                    isReload = false;
-                }
-                else if (ammo == 1)
-                {
-                    Ammo[ammo-1].SetActive(false);
-                }
-                else if (ammo == 2)
-                {
-                    Ammo[ammo-1].SetActive(false);
-                }
-                else if (ammo == 3)
-                {
-                    Ammo[ammo-1].SetActive(false);
-                }
-                else if (ammo == 4)
-                {
-                    Ammo[ammo-1].SetActive(false);
-                }
-                else if (ammo == 5)
-                {
-                    Ammo[ammo-1].SetActive(false);
-                    StartCoroutine(Reload());
-                }
-            }
+            // if (PlayerCharacter.PlayerType == PlayerType.Gun)
+            // {
+            //     //var ammo = playerController.ammo;
+            //
+            //     if (isReload)
+            //     {
+            //         foreach (var VARIABLE in Ammo)
+            //         {
+            //             VARIABLE.SetActive(true);
+            //         }
+            //         isReload = false;
+            //     }
+            //     else if (ammo == 1)
+            //     {
+            //         Ammo[ammo-1].SetActive(false);
+            //     }
+            //     else if (ammo == 2)
+            //     {
+            //         Ammo[ammo-1].SetActive(false);
+            //     }
+            //     else if (ammo == 3)
+            //     {
+            //         Ammo[ammo-1].SetActive(false);
+            //     }
+            //     else if (ammo == 4)
+            //     {
+            //         Ammo[ammo-1].SetActive(false);
+            //     }
+            //     else if (ammo == 5)
+            //     {
+            //         Ammo[ammo-1].SetActive(false);
+            //         StartCoroutine(Reload());
+            //     }
+            // }
 
             goldText.text = $"Gold : {PlayerCharacter.Gold}";
             var playerHp = PlayerCharacter.Hp / PlayerCharacter.MaxHp;
             blood.fillAmount = playerHp;
-            if (PlayerController.CanDash == false)
+            //if (PlayerController.canDash == false)
             {
                 if (candash == true)
                 {
@@ -153,24 +154,24 @@ namespace Script.Menu
 
         public void Reloadative()
         {
-            if (playerController.Ammo > 0)
+            //if (playerController.ammo > 0)
             {
-                StartCoroutine(Reload());
+                //StartCoroutine(Reload());
             }
         }
         
-        IEnumerator Reload()
-        {
-            SoundManager.Instance.Play(SoundManager.Sound.Reload);
-            foreach (var VARIABLE in Ammo)
-            {
-                VARIABLE.SetActive(false);
-            }
-            AmmoText.SetActive(true);
-            yield return new WaitForSeconds(playerController.ReloadTime);
-            AmmoText.SetActive(false);
-            isReload = true;
-        }
+        // IEnumerator Reload()
+        // {
+        //     SoundManager.Instance.PlaySound(SoundManager.Sound.Reload);
+        //     foreach (var VARIABLE in Ammo)
+        //     {
+        //         VARIABLE.SetActive(false);
+        //     }
+        //     AmmoText.SetActive(true);
+        //     yield return new WaitForSeconds(playerController.reloadTime);
+        //     AmmoText.SetActive(false);
+        //     isReload = true;
+        // }
         
         public void OpenStatus()
         {

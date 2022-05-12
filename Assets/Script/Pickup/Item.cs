@@ -3,6 +3,7 @@ using Assets.scriptableobject.Item;
 using Script.Base;
 using Script.Controller;
 using Script.Menu;
+using Script.Player;
 using Script.Sound;
 using Script.Spawn;
 using UnityEngine;
@@ -133,7 +134,7 @@ namespace Script.Pickup
             {
                 Player.Speed = 8;
             }
-            SoundManager.Instance.Play(SoundManager.Sound.Pickup);
+            SoundManager.Instance.PlaySound(SoundManager.Sound.Pickup);
             Destroy(gameObject);
         }
 

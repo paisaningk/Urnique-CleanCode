@@ -1,6 +1,7 @@
 using Cinemachine;
 using MoreMountains.Feedbacks;
 using Script.Controller;
+using Script.Player;
 using Script.Spawn;
 using UnityEngine;
 

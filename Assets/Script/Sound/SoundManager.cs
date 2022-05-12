@@ -25,7 +25,7 @@ namespace Script.Sound
 
         private void Start()
         {
-            Play(Sound.BGM);
+            PlaySound(Sound.BGM);
         }
 
         public enum Sound
@@ -51,7 +51,7 @@ namespace Script.Sound
             ThankYou,
             PlayerDie,
             PlayerDieBGM,
-            Shot,
+            Shoot,
             Reload,
             Ammo,
             BGMBoss,
@@ -75,7 +75,7 @@ namespace Script.Sound
         }
 
         //public void Play(AudioSource audioSource, Sound sound)
-        public void Play(Sound sound)
+        public void PlaySound(Sound sound)
         {
             var soundClip = GetSoundClip(sound);
             if (soundClip.audioSource == null)
@@ -107,7 +107,7 @@ namespace Script.Sound
             //return default(SoundClip);
         }
         
-        public void Stop(Sound sound)
+        public void StopSound(Sound sound)
         {
             var soundClip = GetSoundClip(sound);
             soundClip.audioSource.Stop();

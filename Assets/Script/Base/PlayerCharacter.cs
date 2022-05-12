@@ -2,6 +2,7 @@
 using Assets.scriptableobject.Item;
 using MoreMountains.Feedbacks;
 using Script.Controller;
+using Script.Player;
 using Script.Sound;
 using scriptableobject.Character;
 using UnityEngine;
@@ -67,7 +68,7 @@ namespace Script.Base
                 if (other.CompareTag("EnemyHitBox"))
                 {
                     PlayerHit?.PlayFeedbacks();
-                    SoundManager.Instance.Play(SoundManager.Sound.PlayerTakeHit);
+                    SoundManager.Instance.PlaySound(SoundManager.Sound.PlayerTakeHit);
                     var enemyCharacter = other.GetComponentInParent<EnemyCharacter>();
                     Hp -= enemyCharacter.Atk;
                     StartCoroutine(Setcoloattack());
@@ -77,14 +78,14 @@ namespace Script.Base
                     if (Hp <= 0)
                     {
                         animator.SetBool("Dead", true);
-                        playerController.Dead();
+                        // playerController.Dead();
                     }
                 }
 
                 if (other.CompareTag("Projectile"))
                 {
                     PlayerHit?.PlayFeedbacks();
-                    SoundManager.Instance.Play(SoundManager.Sound.PlayerTakeHit);
+                    SoundManager.Instance.PlaySound(SoundManager.Sound.PlayerTakeHit);
                     var arrow = other.GetComponent<Arrow>();
                     Hp -= arrow.DMG;
                     ShowPopUp(arrow.DMG);
@@ -94,7 +95,7 @@ namespace Script.Base
                     if (Hp <= 0)
                     {
                         animator.SetBool("Dead", true);
-                        playerController.Dead();
+                        // playerController.Dead();
                     }
                 }
             }
@@ -132,8 +133,8 @@ namespace Script.Base
 
         private void Dead()
         {
-            SoundManager.Instance.Stop(SoundManager.Sound.BGM);
-            SoundManager.Instance.Play(SoundManager.Sound.PlayerDieBGM);
+            SoundManager.Instance.StopSound(SoundManager.Sound.BGM);
+            SoundManager.Instance.PlaySound(SoundManager.Sound.PlayerDieBGM);
             Time.timeScale = 0;
         }
     }

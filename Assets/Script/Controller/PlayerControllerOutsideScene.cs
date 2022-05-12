@@ -24,7 +24,7 @@ namespace Script.Controller
 
         private void Start()
         {
-            SoundManager.Instance.Play(SoundManager.Sound.PlayerMovement);
+            SoundManager.Instance.PlaySound(SoundManager.Sound.PlayerMovement);
             PlayerInput.Enable();
         }
         
@@ -37,7 +37,7 @@ namespace Script.Controller
             {
                 if (soundplay)
                 {
-                    SoundManager.Instance.Play(SoundManager.Sound.PlayerMovement);
+                    SoundManager.Instance.PlaySound(SoundManager.Sound.PlayerMovement);
                     soundplay = false;
                 }
                 animator.SetFloat("MoveX",walk.x);
@@ -46,7 +46,7 @@ namespace Script.Controller
             }
             else
             {
-                SoundManager.Instance.Stop(SoundManager.Sound.PlayerMovement);
+                SoundManager.Instance.StopSound(SoundManager.Sound.PlayerMovement);
                 soundplay = true;
                 animator.SetBool("Walking",false); 
             }

@@ -18,7 +18,7 @@ namespace Script.Base
         [SerializeField] private GameObject GoldPrefab;
         [SerializeField] private GameObject Monster;
         [SerializeField] private EnemyType enemyType;
-        public bool isBoss;
+        [SerializeField] public bool isBoss;
         [SerializeField] private GameObject Popup;
         public MMFeedbacks SlowTime;
         public MMFeedbacks Cam;
@@ -69,7 +69,7 @@ namespace Script.Base
             {
                 if (CanHit == false)
                 {
-                    SoundManager.Instance.Play(SoundManager.Sound.Hit);
+                    SoundManager.Instance.PlaySound(SoundManager.Sound.Hit);
                     Cam?.PlayFeedbacks();
                     StartCoroutine(CanAttack());
                     var atkPlayer = other.GetComponentInParent<PlayerCharacter>();
@@ -92,7 +92,7 @@ namespace Script.Base
                 
                     if (Hp <= 0)
                     {
-                        SoundManager.Instance.Play(SoundManager.Sound.EnemyTakeHit);
+                        SoundManager.Instance.PlaySound(SoundManager.Sound.EnemyTakeHit);
                         StartCoroutine(Deaddelay());
                         SlowTime?.PlayFeedbacks();
                     }
@@ -100,7 +100,7 @@ namespace Script.Base
             }
             else if (other.CompareTag("Bullet"))
             {
-                SoundManager.Instance.Play(SoundManager.Sound.Hit);
+                SoundManager.Instance.PlaySound(SoundManager.Sound.Hit);
                 Cam?.PlayFeedbacks();
                 var atkPlayer = other.GetComponent<Bullet>();
                 playerCritRate = atkPlayer.CritRate;
@@ -123,8 +123,8 @@ namespace Script.Base
                 if (Hp <= 0)
                 {
                     SlowTime?.PlayFeedbacks();
-                    SoundManager.Instance.Play(SoundManager.Sound.EnemyTakeHit);
-                    SoundManager.Instance.Play(SoundManager.Sound.Die);
+                    SoundManager.Instance.PlaySound(SoundManager.Sound.EnemyTakeHit);
+                    SoundManager.Instance.PlaySound(SoundManager.Sound.Die);
                     StartCoroutine(Deaddelay());
                     
                 }

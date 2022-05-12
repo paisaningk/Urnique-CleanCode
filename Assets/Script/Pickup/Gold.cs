@@ -13,7 +13,7 @@ namespace Script.Pickup
             
             if (other.CompareTag("Player"))
             {
-                SoundManager.Instance.Play(SoundManager.Sound.Coin);
+                SoundManager.Instance.PlaySound(SoundManager.Sound.Coin);
                 AddGold(other,goldAmount);
             }
         }

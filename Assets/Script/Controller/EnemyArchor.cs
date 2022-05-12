@@ -62,7 +62,7 @@ namespace Script.Base
 
         private void Shots()
         {
-            SoundManager.Instance.Play(SoundManager.Sound.WitchAttack);
+            SoundManager.Instance.PlaySound(SoundManager.Sound.WitchAttack);
             var arrow = ObjectPool.SharedInstance.GetPooledObject("Projectile");
             arrow.SetActive(true);
             arrow.transform.position = transform.position;

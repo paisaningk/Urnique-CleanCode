@@ -1,10 +1,12 @@
 using System.Collections;
+using MoreMountains.Tools;
 using Script.Base;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Script.Controller
 {
-    public class BossController : MonoBehaviour
+    public class BossController : MonoBehaviour 
     {
         [SerializeField] private float stoppingDistance = 3f;
         [SerializeField] private float movespeed = 20f;
