@@ -1,0 +1,354 @@
+fileFormatVersion: 2
+guid: fe8d8e7b3b941114982c3c21f03d3a2e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4706059740326111305
+    second: marksman_remas_back_walkt-Sheet_0
+  - first:
+      213: 559925385789589201
+    second: marksman_remas_back_walkt-Sheet_1
+  - first:
+      213: -4508176370028234072
+    second: marksman_remas_back_walkt-Sheet_2
+  - first:
+      213: 1361011237164004271
+    second: marksman_remas_back_walkt-Sheet_3
+  - first:
+      213: 4740579035039900956
+    second: marksman_remas_back_walkt-Sheet_4
+  - first:
+      213: 7090024971146983976
+    second: marksman_remas_back_walkt-Sheet_5
+  - first:
+      213: -4485239099934507213
+    second: marksman_remas_back_walkt-Sheet_6
+  - first:
+      213: -4357180339514615764
+    second: marksman_remas_back_walkt-Sheet_7
+  - first:
+      213: -6123181144967048570
+    second: marksman_remas_back_walkt-Sheet_8
+  - first:
+      213: 1696134960150091133
+    second: marksman_remas_back_walkt-Sheet_9
+  - first:
+      213: 5583444883459484913
+    second: marksman_remas_back_walkt-Sheet_10
+  - first:
+      213: -5641839060535831538
+    second: marksman_remas_back_walkt-Sheet_11
+  - first:
+      213: 3726219788734802834
+    second: marksman_remas_back_walkt-Sheet_12
+  - first:
+      213: -2877478164268690536
+    second: marksman_remas_back_walkt-Sheet_13
+  - first:
+      213: -3550938180345743715
+    second: marksman_remas_back_walkt-Sheet_14
+  - first:
+      213: 1127684381837194691
+    second: marksman_remas_back_walkt-Sheet_15
+  - first:
+      213: -4934064396530195185
+    second: marksman_remas_back_walkt-Sheet_16
+  - first:
+      213: -6018226761785553670
+    second: marksman_remas_back_walkt-Sheet_17
+  - first:
+      213: 7943978320800890098
+    second: marksman_remas_back_walkt-Sheet_18
+  - first:
+      213: -3458638596159245083
+    second: marksman_remas_back_walkt-Sheet_19
+  - first:
+      213: 2594533104383380861
+    second: marksman_remas_back_walkt-Sheet_20
+  - first:
+      213: -9059106993160271229
+    second: marksman_remas_back_walkt-Sheet_21
+  - first:
+      213: -6218629941397917529
+    second: marksman_remas_back_walkt-Sheet_22
+  - first:
+      213: -7416408835579188641
+    second: marksman_remas_back_walkt-Sheet_23
+  - first:
+      213: -1891921302485871031
+    second: marksman_remas_back_walkt-Sheet_24
+  - first:
+      213: -792813170894430376
+    second: marksman_remas_back_walkt-Sheet_25
+  - first:
+      213: 5084079928559192590
+    second: marksman_remas_back_walkt-Sheet_26
+  - first:
+      213: -8169666238403481467
+    second: marksman_remas_back_walkt-Sheet_27
+  - first:
+      213: -6019731264615051707
+    second: marksman_remas_back_walkt-Sheet_28
+  - first:
+      213: 2285243426674276324
+    second: marksman_remas_back_walkt-Sheet_29
+  - first:
+      213: -708910563198994617
+    second: marksman_remas_back_walkt-Sheet_30
+  - first:
+      213: 1329757586351922854
+    second: marksman_remas_back_walkt-Sheet_31
+  - first:
+      213: -7807975355419095039
+    second: marksman_remas_back_walkt-Sheet_32
+  - first:
+      213: -4943330699241136913
+    second: marksman_remas_back_walkt-Sheet_33
+  - first:
+      213: 4095488160151486336
+    second: marksman_remas_back_walkt-Sheet_34
+  - first:
+      213: 7517234835638483226
+    second: marksman_remas_back_walkt-Sheet_35
+  - first:
+      213: 5111986242917931679
+    second: marksman_remas_back_walkt-Sheet_36
+  - first:
+      213: -4693819722114386585
+    second: marksman_remas_back_walkt-Sheet_37
+  - first:
+      213: -6659856666002408752
+    second: marksman_remas_back_walkt-Sheet_38
+  - first:
+      213: 4702043592641991594
+    second: marksman_remas_back_walkt-Sheet_39
+  - first:
+      213: 4331605016133927314
+    second: marksman_remas_back_walkt-Sheet_40
+  - first:
+      213: 1826082863790558425
+    second: marksman_remas_back_walkt-Sheet_41
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 70
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: marksman_remas_back_walkt-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 948a7e966684f4140800000000000000
+      internalID: 4706059740326111305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marksman_remas_back_walkt-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d646b8fb2145c700800000000000000
+      internalID: 559925385789589201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marksman_remas_back_walkt-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa38af0a7dbf61c0800000000000000
+      internalID: -4508176370028234072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: marksman_remas_back_walkt-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa3b97e528843e210800000000000000
+      internalID: 1361011237164004271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 4af7e2ef56fe6f64ab30de5990a33c87
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

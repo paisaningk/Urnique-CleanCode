@@ -1,0 +1,968 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MMF_Player
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: 6da43522623d4704e979466dc7650b65,
+      type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Feedbacks.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: InitializationMode
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: SafeMode
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Direction
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: AutoChangeDirectionOnEnd
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: AutoPlayOnStart
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: AutoPlayOnEnable
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: DurationMultiplier
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: DisplayFullDurationDetails
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: CooldownDuration
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: InitialDelay
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: CanPlayWhileAlreadyPlaying
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: ChanceToPlay
+    value: 100
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksIntensity
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Events.TriggerMMFeedbacksEvents
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Events.TriggerUnityEvents
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Events.OnPlay.m_PersistentCalls.m_Calls.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Events.OnPause.m_PersistentCalls.m_Calls.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Events.OnResume.m_PersistentCalls.m_Calls.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Events.OnRevert.m_PersistentCalls.m_Calls.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Events.OnComplete.m_PersistentCalls.m_Calls.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: DebugActive
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.size
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0]
+    value: MoreMountains.Feedbacks MoreMountains.Feedbacks.MMF_AudioSource
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].Active
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].UniqueID
+    value: -990294488
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].Label
+    value: AudioSource
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].Channel
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].Chance
+    value: 100
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].DisplayColor.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].DisplayColor.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].DisplayColor.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].DisplayColor.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].Timing.TimescaleMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].Timing.ExcludeFromHoldingPauses
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].Timing.ContributeToTotalDuration
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].Timing.InitialDelay
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].Timing.CooldownDuration
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].Timing.InterruptsOnStop
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].Timing.NumberOfRepeats
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].Timing.RepeatForever
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].Timing.DelayBetweenRepeats
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].Timing.MMFeedbacksDirectionCondition
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].Timing.PlayDirection
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].Timing.ConstantIntensity
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].Timing.UseIntensityInterval
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].Timing.IntensityIntervalMin
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].Timing.IntensityIntervalMax
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].Timing.Sequence
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].Timing.TrackID
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].Timing.Quantized
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].Timing.TargetBPM
+    value: 120
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].Owner
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].DebugActive
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].TargetAudioSource
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].Mode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].RandomSfx.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].MinVolume
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].MaxVolume
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].MinPitch
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].MaxPitch
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[0].SfxAudioMixerGroup
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1]
+    value: MoreMountains.Feedbacks.MMTools MoreMountains.Feedbacks.MMF_Fade
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Active
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].UniqueID
+    value: -578016593
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Label
+    value: Fade
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Channel
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Chance
+    value: 100
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].DisplayColor.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].DisplayColor.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].DisplayColor.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].DisplayColor.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Timing.TimescaleMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Timing.ExcludeFromHoldingPauses
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Timing.ContributeToTotalDuration
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Timing.InitialDelay
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Timing.CooldownDuration
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Timing.InterruptsOnStop
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Timing.NumberOfRepeats
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Timing.RepeatForever
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Timing.DelayBetweenRepeats
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Timing.MMFeedbacksDirectionCondition
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Timing.PlayDirection
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Timing.ConstantIntensity
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Timing.UseIntensityInterval
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Timing.IntensityIntervalMin
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Timing.IntensityIntervalMax
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Timing.Sequence
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Timing.TrackID
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Timing.Quantized
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Timing.TargetBPM
+    value: 120
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Owner
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].DebugActive
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].FadeType
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].ID
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Duration
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Curve.MMTweenDefinitionType
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Curve.MMTweenCurve
+    value: 5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Curve.Curve.m_Curve.Array.size
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Curve.Curve.m_Curve.Array.data[0].time
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Curve.Curve.m_Curve.Array.data[0].value
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Curve.Curve.m_Curve.Array.data[0].inSlope
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Curve.Curve.m_Curve.Array.data[0].outSlope
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Curve.Curve.m_Curve.Array.data[0].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Curve.Curve.m_Curve.Array.data[0].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Curve.Curve.m_Curve.Array.data[0].inWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Curve.Curve.m_Curve.Array.data[0].outWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Curve.Curve.m_Curve.Array.data[1].time
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Curve.Curve.m_Curve.Array.data[1].value
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Curve.Curve.m_Curve.Array.data[1].inSlope
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Curve.Curve.m_Curve.Array.data[1].outSlope
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Curve.Curve.m_Curve.Array.data[1].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Curve.Curve.m_Curve.Array.data[1].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Curve.Curve.m_Curve.Array.data[1].inWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Curve.Curve.m_Curve.Array.data[1].outWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Curve.Curve.m_PreInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Curve.Curve.m_PostInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].Curve.Curve.m_RotationOrder
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].IgnoreTimeScale
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].TargetAlpha
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].PositionMode
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].TargetTransform
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].TargetPosition.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].TargetPosition.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].TargetPosition.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].PositionOffset.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].PositionOffset.y
+    value: 1.6
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[1].PositionOffset.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2]
+    value: MoreMountains.Feedbacks MoreMountains.Feedbacks.MMF_HoldingPause
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].Active
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].UniqueID
+    value: 1426953521
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].Label
+    value: Holding Pause
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].Channel
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].Chance
+    value: 100
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].DisplayColor.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].DisplayColor.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].DisplayColor.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].DisplayColor.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].Timing.TimescaleMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].Timing.ExcludeFromHoldingPauses
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].Timing.ContributeToTotalDuration
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].Timing.InitialDelay
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].Timing.CooldownDuration
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].Timing.InterruptsOnStop
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].Timing.NumberOfRepeats
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].Timing.RepeatForever
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].Timing.DelayBetweenRepeats
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].Timing.MMFeedbacksDirectionCondition
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].Timing.PlayDirection
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].Timing.ConstantIntensity
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].Timing.UseIntensityInterval
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].Timing.IntensityIntervalMin
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].Timing.IntensityIntervalMax
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].Timing.Sequence
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].Timing.TrackID
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].Timing.Quantized
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].Timing.TargetBPM
+    value: 120
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].Owner
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].DebugActive
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].PauseDuration
+    value: 0.5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].RandomizePauseDuration
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].MinPauseDuration
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].MaxPauseDuration
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].RandomizeOnEachPlay
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].ScriptDriven
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].AutoResume
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[2].AutoResumeAfter
+    value: 0.25
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3]
+    value: MoreMountains.Feedbacks.MMTools MoreMountains.Feedbacks.MMF_Fade
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Active
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].UniqueID
+    value: -1900927075
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Label
+    value: Fade
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Channel
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Chance
+    value: 100
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].DisplayColor.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].DisplayColor.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].DisplayColor.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].DisplayColor.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Timing.TimescaleMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Timing.ExcludeFromHoldingPauses
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Timing.ContributeToTotalDuration
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Timing.InitialDelay
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Timing.CooldownDuration
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Timing.InterruptsOnStop
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Timing.NumberOfRepeats
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Timing.RepeatForever
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Timing.DelayBetweenRepeats
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Timing.MMFeedbacksDirectionCondition
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Timing.PlayDirection
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Timing.ConstantIntensity
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Timing.UseIntensityInterval
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Timing.IntensityIntervalMin
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Timing.IntensityIntervalMax
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Timing.Sequence
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Timing.TrackID
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Timing.Quantized
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Timing.TargetBPM
+    value: 120
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Owner
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].DebugActive
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].FadeType
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].ID
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Duration
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Curve.MMTweenDefinitionType
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Curve.MMTweenCurve
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Curve.Curve.m_Curve.Array.size
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Curve.Curve.m_Curve.Array.data[0].time
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Curve.Curve.m_Curve.Array.data[0].value
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Curve.Curve.m_Curve.Array.data[0].inSlope
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Curve.Curve.m_Curve.Array.data[0].outSlope
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Curve.Curve.m_Curve.Array.data[0].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Curve.Curve.m_Curve.Array.data[0].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Curve.Curve.m_Curve.Array.data[0].inWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Curve.Curve.m_Curve.Array.data[0].outWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Curve.Curve.m_Curve.Array.data[1].time
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Curve.Curve.m_Curve.Array.data[1].value
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Curve.Curve.m_Curve.Array.data[1].inSlope
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Curve.Curve.m_Curve.Array.data[1].outSlope
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Curve.Curve.m_Curve.Array.data[1].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Curve.Curve.m_Curve.Array.data[1].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Curve.Curve.m_Curve.Array.data[1].inWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Curve.Curve.m_Curve.Array.data[1].outWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Curve.Curve.m_PreInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Curve.Curve.m_PostInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].Curve.Curve.m_RotationOrder
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].IgnoreTimeScale
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].TargetAlpha
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].PositionMode
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].TargetTransform
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].TargetPosition.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].TargetPosition.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].TargetPosition.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].PositionOffset.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].PositionOffset.y
+    value: 1.6
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: FeedbacksList.Array.data[3].PositionOffset.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: KeepPlayModeChanges
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: PerformanceMode
+    value: 0
+    objectReference: {fileID: 0}
+  m_ExcludedProperties: []

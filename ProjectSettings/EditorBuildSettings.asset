@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/StarGame.unity
+    guid: 8c5e43aa204d66a459470eebc3287d93
+  - enabled: 1
+    path: Assets/Scenes/MainMenu_PC.unity
+    guid: c66f83a53df213440b893d2bc3c4c450
+  - enabled: 1
+    path: Assets/Scenes/Map1.unity
+    guid: b7853f02adc097d47b548315791c1323
+  - enabled: 1
+    path: Assets/Scenes/Takuma.unity
+    guid: 6202189d9998cd847aa197b4ecea6967
+  - enabled: 1
+    path: Assets/Feel/MMTools/Tools/MMSceneLoading/LoadingScreens/LoadingScreen.unity
+    guid: 888394d52616e5e42b3b54c3f2bbd3eb
+  - enabled: 1
+    path: Assets/Scenes/Takuma_B.unity
+    guid: c46958ff3b7c13548928c110611badee
+  - enabled: 1
+    path: Assets/Scenes/Boss.unity
+    guid: c4f737cc642aac04f95e8339644d7997
+  m_configObjects: {}
