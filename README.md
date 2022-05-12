@@ -1,2 +1,2 @@
-#โค๊ดที่ได้ทำการ Clean Code ไป
-1.PlayController อยู่ในไฟล์ Assets/Script/Player
+#Code that has been cleaned code
+<p>1.PlayController and in the file Assets/Script/Player</p>

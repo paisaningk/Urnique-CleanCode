@@ -32,7 +32,19 @@ namespace Script.Player
         private void Update()
         {
             playerMovement.SetMoveDirectionNormalized(GetMoveDirection());
+            CheckMoveDirectionToPlayAnimationWalk();
+            CheckIsPlayerTypeGunToExecute();
+        }
 
+        private void CheckIsPlayerTypeGunToExecute()
+        {
+            if (!IsPlayerTypeGun()) return;
+            playerAttackRanged.GunFollowMouse();
+            playerAttackRanged.SetMousePosition(GetMouseInScreenToWorldPoint());
+        }
+
+        private void CheckMoveDirectionToPlayAnimationWalk()
+        {
             if (playerMovement.CheckMoveDirectionEqualVector3Zero())
             {
                 playerAnimator.PlayAnimationWalk(playerMovement.moveDirection);
@@ -41,11 +53,6 @@ namespace Script.Player
             {
                 playerAnimator.StopAnimationWalk();
             }
-
-            if (!IsPlayerTypeGun()) return;
-            playerAttackRanged.GunFollowMouse();
-            playerAttackRanged.SetMousePosition(GetMouseInScreenToWorldPoint());
-            
         }
         
         private void SetupComponents()
