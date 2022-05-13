@@ -56,10 +56,10 @@ namespace Script.Controller
             rb.MovePosition(move);
         }
         
-        IEnumerator Wait()
+        IEnumerator WaitForSeconds()
         {
-            var a = Random.Range(StarMove,StarMoveslowe);
-            yield return new WaitForSeconds(a);
+            var timeToWait = Random.Range(StarMove,StarMoveslowe);
+            yield return new WaitForSeconds(timeToWait);
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
             attacking = false;
             nextMove = false;
@@ -68,7 +68,7 @@ namespace Script.Controller
         private void AttackFinish()
         {
             animator.SetBool("Attack",false);
-            StartCoroutine(Wait());
+            StartCoroutine(WaitForSeconds());
         }
 
         private void Selectnextmove()
