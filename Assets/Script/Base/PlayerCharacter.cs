@@ -31,6 +31,7 @@ namespace Script.Base
         private PlayerController playerController;
         private SpriteRenderer spriteRenderer;
         private bool isTakedmg = false;
+        public bool isDead = false;
 
         public void Awake()
         {
@@ -78,7 +79,7 @@ namespace Script.Base
                     if (Hp <= 0)
                     {
                         animator.SetBool("Dead", true);
-                        // playerController.Dead();
+                        isDead = true;
                     }
                 }
 

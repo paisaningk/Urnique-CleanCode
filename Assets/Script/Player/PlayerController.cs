@@ -13,15 +13,14 @@ namespace Script.Player
     }
     public class PlayerController : MonoBehaviour
     {
-        [SerializeField] public GameplaySceneMenu gameplaySceneMenu;
         [SerializeField] public PlayerType playerType;
         
-        //แก้
         private PlayerMovement playerMovement;
         private PlayerAnimator playerAnimator;
         private PlayerAttackMelee playerAttackMelee;
         private PlayerAttackRanged playerAttackRanged;
         public static Playerinput playerInput;
+        
         private void Awake()
         {
             SetupComponents();
@@ -36,6 +35,17 @@ namespace Script.Player
             CheckIsPlayerTypeGunToExecute();
         }
 
+        private void SetupComponents()
+        {
+            playerMovement = GetComponent<PlayerMovement>();
+            playerAnimator = GetComponent<PlayerAnimator>();
+            playerAttackMelee = GetComponent<PlayerAttackMelee>();
+            if (IsPlayerTypeGun())
+            {
+                playerAttackRanged = GetComponent<PlayerAttackRanged>();
+            }
+        }
+        
         private void CheckIsPlayerTypeGunToExecute()
         {
             if (!IsPlayerTypeGun()) return;
@@ -54,17 +64,6 @@ namespace Script.Player
                 playerAnimator.StopAnimationWalk();
             }
         }
-        
-        private void SetupComponents()
-        {
-            playerMovement = GetComponent<PlayerMovement>();
-            playerAnimator = GetComponent<PlayerAnimator>();
-            playerAttackMelee = GetComponent<PlayerAttackMelee>();
-            if (IsPlayerTypeGun())
-            {
-                playerAttackRanged = GetComponent<PlayerAttackRanged>();
-            }
-        }
 
         private bool IsPlayerTypeGun()
         {
@@ -75,8 +74,7 @@ namespace Script.Player
         {
             playerInput = new Playerinput();
             playerInput.PlayerAction.Dash.performed += context => playerMovement.Dash();
-            playerInput.PlayerAction.Pause.performed += context => CheckIsPause();
-            
+
             if (IsPlayerTypeGun())
             {
                 playerInput.PlayerAction.Attack.performed += context => playerAttackRanged.ShootBullet();
@@ -103,20 +101,7 @@ namespace Script.Player
         {
             return playerInput.PlayerAction.Move.ReadValue<Vector3>();
         }
-        
-        private void CheckIsPause()
-        {
-            switch (gameplaySceneMenu.isPause)
-            {
-                case false:
-                    gameplaySceneMenu.Pause();
-                    break;
-                case true:
-                    gameplaySceneMenu.Resume();
-                    break;
-            }
-        }
-        
+
         public void OnPlayerInputEnable()
         {
             playerInput.Enable();

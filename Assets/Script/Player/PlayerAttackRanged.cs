@@ -11,8 +11,8 @@ namespace Script.Player
         private GunController gunController;
         private int maxAmmo = 5;
         private bool canFire = true;
-        private int ammo;
-        private float reloadTime = 2;
+        internal int ammo;
+        internal float reloadTime = 2;
         private Vector3 mousePosition;
 
         private void Awake()

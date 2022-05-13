@@ -5,8 +5,8 @@ namespace Script.Player
 {
     public class GunController : MonoBehaviour
     {
-        public Transform startFire;
-        public float bulletSpeed = 3;
+        [SerializeField]private Transform startFire;
+        private float bulletSpeed = 3;
         private int maxAmmo = 5;
         private Animator animator;
         private void Awake()
