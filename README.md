@@ -1,6 +1,6 @@
-# Code that has been cleaned code
+# โค๊ดที่ถูก cleaned แล้ว
 
 <ol>
-  <li>PlayController in the file Assets/Script/Player</li>
-  <li>GameplaySceneMenu in the file Assets/Script/UI</li>
+  <li>PlayController อยู่ในไฟล์ Assets/Script/Player</li>
+  <li>GameplaySceneMenu อยู่ในไฟล์ Assets/Script/UI</li>
 </ol>
